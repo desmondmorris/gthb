@@ -1,0 +1,37 @@
+{
+  "name": "gthb",
+  "version": "0.0.1",
+  "description": "A lightweight wrapper around the GitHub API.",
+  "main": "./index",
+  "scripts": {
+    "test": "npm run lint && mocha",
+    "lint": "jshint index.js lib/*.js examples/*.js test/*.js && echo Lint passed."
+  },
+  "author": "Desmond Morris <hi@desmondmorris.com>",
+  "license": "MIT",
+  "dependencies": {
+    "deep-extend": "^0.3.3",
+    "request": "^2.55.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.6.3",
+    "nock": "^1.5.0"
+  },
+  "jshintConfig": {
+    "boss": true,
+    "node": true,
+    "strict": true,
+    "newcap": false,
+    "undef": true,
+    "unused": true,
+    "onecase": true,
+    "lastsemic": true,
+    "indent": 2,
+    "globals": {
+      "escape": true,
+      "describe": true,
+      "it": true,
+      "before": true
+    }
+  }
+}
